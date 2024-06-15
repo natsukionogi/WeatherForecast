@@ -1,0 +1,69 @@
+body {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;  
+  background-color: rgb(191, 231, 231);
+}
+#midasi {
+  padding: 1rem 3rem;
+  -webkit-transform: skew(-15deg);/*-webkit-は，ベンダープレフィクス(GoogleとSafari)*/
+  transform: skew(-15deg);
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#209cff), to(#68e0cf));
+  background-image: -webkit-linear-gradient(left, #209cff 0%, #68e0cf 100%);
+  background-image: linear-gradient(to right, #209cff 0%, #68e0cf 100%);
+}
+
+.midasi2 {
+  width: 60%;
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0 1rem -10px;
+  padding: 1rem 3rem;
+  color: #fff;
+  border-radius: 0 100vh 100vh 0;
+  background: #0075a9;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+}
+
+.midasi2:before {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 0;
+  content: '';
+  border-top: 10px solid #005276;
+  border-left: 10px solid transparent;
+}
+
+.midasi3{
+  border-bottom: 3px dotted #000;
+}
+
+.box {
+  background-color: #209cff;
+  width: 50%;
+  margin: 0 auto;
+	height: 400px;
+  position: relative;
+  text-align: center;
+
+  padding: 0.5em 1em;
+  font-weight: bold;
+  color: #578cd1;/*文字色*/
+  background: #FFF;
+  border: solid 3px #4f8ddd;/*線*/
+  border-radius: 10px;/*角の丸み*/
+}
+.box p {
+  margin: 0; 
+  padding: 0;
+}
+
+.imgCss{
+  padding-top: 30px;
+  width: 90%;
+  height: 90%;
+}

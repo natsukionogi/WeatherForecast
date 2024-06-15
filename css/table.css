@@ -1,0 +1,39 @@
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 60%;
+    border:1px solid rgba(51, 51, 51, 0.575);
+    margin: 0 auto;
+}
+  
+table tr{
+    border-bottom: solid 1px #eee;
+    cursor: pointer;
+    background-color: white;
+}
+
+table tr:hover{
+    background-color: #d4f0fd;
+}
+
+table th,table td{
+    text-align: center;
+    width: 25%;
+    padding: 15px 0;
+    border-collapse: collapse;
+    border:1px solid rgba(51, 51, 51, 0.575);
+}
+
+table td.icon{
+    background-size: 35px;
+    background-position: left 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+.table_head{
+    background-color: rgba(168, 167, 167, 0.808);
+}
+.table_head:hover{
+    background-color: rgba(168, 167, 167, 0.808);
+}

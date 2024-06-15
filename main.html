@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お天気Webアプリ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!--JqueryのCDN-->
+    <link rel="stylesheet"  href="css/table.css"></link><!--テーブルののCSS-->
+    <link rel="stylesheet"  href="css/main.css"></link><!--main.htmlのCSS-->
+    <script src="js/openWeather.js"></script><!--OpenWeatherMapのAPIを使ったJS-->
+    <link rel="stylesheet" href="css/tenki_icon.css"><!--天気のアイコン(ウィジット風)CSS-->
+    <link rel="stylesheet" href="css/start_load.css"><!--ローディングのCSS-->
+    <script src="js/start_load.js"></script><!--ローディングのjs-->
+  </head>
+<body style="text-align: center;">
+      <!--ローディング表示のdiv-->
+      <div id="loader-bg">
+        <div id="loader">
+          <img src="img/img-loading.gif" width="80" height="80" alt="Now Loading..." />
+          <p>Now Loading...</p>
+        </div>
+      </div>
+      <!--ローディング完了後の表示のdiv-->
+      <div id="wrap">
+        <h1 id="midasi">現在地天気予報Webアプリ</h1>
+        <h2 id="place" class="midasi2"></h2><!--現在地の表示-->
+        <div id="now">
+          <div class="box">
+              <h3 id="weatherStr" class="midasi3"></h3>
+              <div id="widget"></div><!--今日の天気ウィジットの表示-->  
+          </div>
+        </div>
+
+        <div id="3hours"><!--三時間毎の天気予報-->
+          <h2 class="midasi2">今日の3時間ごとの天気</h2>
+          <table id="hoursTable">
+            <tr class="table_head">
+              <th>天気</th>
+              <th>時刻</th>
+              <th>気温</th>
+              <th>湿度</th>
+            </tr>
+          </table>
+        </div>
+
+        <div id="5days"><!--5日分の天気予報-->
+          <h2 class="midasi2">今後5日間の正午の天気</h2>
+          <table id="fiveDaysTable">
+            <tr class="table_head">
+              <th>天気</th>
+              <th>日付</th>
+              <th>気温</th>
+              <th>湿度</th>
+            </tr>          
+          </table>  
+        </div>
+      </div>
+</body>
+</html>
